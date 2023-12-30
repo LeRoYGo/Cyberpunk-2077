@@ -1,0 +1,222 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1340px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.66;
+  padding: 19px 50px;
+  color: #f8f200;
+  background-color: #000;
+}
+
+.header {
+  background-image: url("./../img/header/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 500px;
+}
+.header__content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social__list {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.card {
+  color: #000;
+  font-size: 62px;
+  font-weight: 400;
+  background-color: #f8f200;
+  -webkit-clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
+          clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
+  padding: 70px;
+}
+.card h2 {
+  max-width: 484px;
+  margin-bottom: 25px;
+  font-family: "Archangelsk";
+  font-size: 62px;
+}
+
+.about-play {
+  padding: 70px 0 140px;
+  position: relative;
+}
+.about-play__title {
+  font-family: "Archangelsk";
+  font-size: 62px;
+  margin-bottom: 25px;
+}
+.about-play__desc {
+  color: #777;
+  font-size: 18px;
+  line-height: 1.88;
+  max-width: 952px;
+  margin-bottom: 70px;
+}
+.about-play__list {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.about-play__column1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.about-play::after {
+  content: "";
+  display: block;
+  background-image: url("./../img/gradient-transition.png");
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.game-name {
+  color: #52bedc;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.88;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list-logo {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.footer__list-link {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.footer_link {
+  color: #000;
+  font-size: 18px;
+}
+.footer__copyright {
+  background-color: #000;
+}
+.footer__copyright p {
+  padding: 13px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
