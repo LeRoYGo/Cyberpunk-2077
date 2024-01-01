@@ -434,12 +434,15 @@ body {
 
 .platform {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   -moz-column-gap: 79px;
        column-gap: 79px;
   row-gap: 47px;
   max-width: 320px;
 }
+
 .footer__nav {
   display: flex;
   justify-content: space-between;

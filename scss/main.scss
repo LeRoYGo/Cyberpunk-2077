@@ -325,8 +325,6 @@ body {
     color: #fff;
     display: flex;
     justify-content: center;
-    &__img {
-    }
     &__content {
         padding: 70px 32px 0;
     }
@@ -354,12 +352,12 @@ body {
 }
 .platform {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     column-gap: 79px;
     row-gap: 47px;
     max-width: 320px;
-    &__item {
-    }
 }
 
 // FOOTER
