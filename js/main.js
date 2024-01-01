@@ -1,8 +1,6 @@
 (function () {
     var block = document.getElementById("header");
-
     setInterval(changeBackground, 5000);
-
     function changeBackground() {
         const max = 3;
         const number = Math.floor(Math.random() * max + 1);
