@@ -124,7 +124,20 @@ body {
 }
 .header__content {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 624px;
+  font-size: 62px;
+  background-color: #f8f200;
+  -webkit-clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
+          clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
+  padding: 70px;
+  margin-left: auto;
+}
+.header__content h2 {
+  max-width: 484px;
+  margin-bottom: 25px;
+  font-family: "Archangelsk";
 }
 
 .nav {
@@ -138,19 +151,6 @@ body {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
-}
-
-.card {
-  font-size: 62px;
-  background-color: #f8f200;
-  -webkit-clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
-          clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
-  padding: 70px;
-}
-.card h2 {
-  max-width: 484px;
-  margin-bottom: 25px;
-  font-family: "Archangelsk";
 }
 
 .about-play {
