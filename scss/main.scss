@@ -32,7 +32,6 @@ body {
     background-image: url("./../img/header/1.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
-    background-size: cover;
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -147,7 +146,6 @@ body {
     &__img {
         display: flex;
         column-gap: 55px;
-        width: fit-content;
         img:first-child {
             position: relative;
             bottom: -50px;

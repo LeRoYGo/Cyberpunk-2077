@@ -116,7 +116,6 @@ body {
   background-image: url("./../img/header/1.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: cover;
 }
 .header__nav {
   display: flex;
@@ -230,8 +229,6 @@ body {
   display: flex;
   -moz-column-gap: 55px;
        column-gap: 55px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .offer__img img:first-child {
   position: relative;
