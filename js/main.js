@@ -1,8 +1,13 @@
-var block = document.getElementById("header");
-var btn = document.getElementById("button");
+(function () {
+    var block = document.getElementById("header");
 
-btn.onclick = function changeBgImg() {
-    const a = Math.floor(Math.random(1, 4) * 4);
-    block.style.backgroundImage = `url('./../img/header/${a}.jpg')`;
-    console.log(a);
-};
+    setInterval(changeBackground, 5000);
+
+    function changeBackground() {
+        const arr = [1, 2, 3];
+        const min = 0;
+        const number = Math.floor(Math.random() * arr.length + 1);
+        block.style.backgroundImage = `url('./../img/header/${number}.jpg')`;
+        console.log(number);
+    }
+})();
