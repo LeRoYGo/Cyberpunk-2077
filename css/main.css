@@ -331,11 +331,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.file__label p {
   font-size: 18px;
   font-weight: 300;
   text-decoration: underline;
+}
+.file__label span {
+  text-decoration: none;
 }
 
 .product {
