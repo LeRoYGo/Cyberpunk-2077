@@ -4,9 +4,8 @@
     setInterval(changeBackground, 5000);
 
     function changeBackground() {
-        const arr = [1, 2, 3];
-        const min = 0;
-        const number = Math.floor(Math.random() * arr.length + 1);
+        const max = 3;
+        const number = Math.floor(Math.random() * max + 1);
         block.style.backgroundImage = `url('./../img/header/${number}.jpg')`;
         console.log(number);
     }
