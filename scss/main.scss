@@ -1,4 +1,16 @@
 @import "_reset";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@font-face {
+    font-family: "Archangelsk";
+    src: url("./../fonts/Archangelsk/Archangelsk.eot");
+    src:
+        local("Archangelsk"),
+        url("./../fonts/Archangelsk/Archangelsk.eot?#iefix") format("embedded-opentype"),
+        url("./../fonts/Archangelsk/Archangelsk.woff") format("woff"),
+        url("./../fonts/Archangelsk/Archangelsk.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     background-color: #ffffff;
@@ -234,16 +246,11 @@ body {
 // PRODUCT
 
 .product {
-    background: #f8f200;
     position: relative;
     display: flex;
     column-gap: 30px;
-    &__wrapper {
-        padding: 140px 0 70px 0;
-        display: flex;
-        column-gap: 30px;
-    }
-    ::before {
+    background: #f8f200;
+    &::before {
         content: "";
         background-image: url("./../img/gradient-transition2.png");
         height: 70px;
@@ -252,13 +259,18 @@ body {
         left: 0;
         top: 0;
     }
+    &__wrapper {
+        display: flex;
+        column-gap: 30px;
+        padding: 140px 0 70px 0;
+    }
 }
 .product-content {
     &__img {
         display: flex;
         flex-direction: column;
-        row-gap: 25px;
         align-items: center;
+        row-gap: 25px;
     }
     &__partners {
         display: flex;
@@ -268,6 +280,7 @@ body {
 }
 
 .product-card {
+    font-size: 18px;
     &__title {
         font-family: "Archangelsk";
         font-size: 62px;
@@ -275,7 +288,6 @@ body {
         margin-bottom: 20px;
     }
     &__desc {
-        font-size: 18px;
         line-height: 1.88;
         max-width: 624px;
         margin-bottom: 20px;
@@ -290,7 +302,6 @@ body {
         display: flex;
         align-items: center;
         column-gap: 10px;
-        font-size: 18px;
     }
 }
 
@@ -330,7 +341,13 @@ body {
         padding-bottom: 70px;
         padding-bottom: 70px;
     }
-    &_platform {
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &___list_platform {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -353,7 +370,7 @@ body {
         display: flex;
         column-gap: 32px;
     }
-    &_link {
+    &__list_link {
         color: #000;
         font-size: 18px;
     }

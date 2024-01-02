@@ -1,4 +1,5 @@
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -85,6 +86,13 @@ legend {
   display: block;
 }
 
+@font-face {
+  font-family: "Archangelsk";
+  src: url("./../fonts/Archangelsk/Archangelsk.eot");
+  src: local("Archangelsk"), url("./../fonts/Archangelsk/Archangelsk.eot?#iefix") format("embedded-opentype"), url("./../fonts/Archangelsk/Archangelsk.woff") format("woff"), url("./../fonts/Archangelsk/Archangelsk.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -312,19 +320,13 @@ body {
 }
 
 .product {
-  background: #f8f200;
   position: relative;
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  background: #f8f200;
 }
-.product__wrapper {
-  padding: 140px 0 70px 0;
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-.product ::before {
+.product::before {
   content: "";
   background-image: url("./../img/gradient-transition2.png");
   height: 70px;
@@ -333,12 +335,18 @@ body {
   left: 0;
   top: 0;
 }
+.product__wrapper {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 140px 0 70px 0;
+}
 
 .product-content__img {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
   align-items: center;
+  row-gap: 25px;
 }
 .product-content__partners {
   display: flex;
@@ -347,6 +355,9 @@ body {
        column-gap: 25px;
 }
 
+.product-card {
+  font-size: 18px;
+}
 .product-card__title {
   font-family: "Archangelsk";
   font-size: 62px;
@@ -354,7 +365,6 @@ body {
   margin-bottom: 20px;
 }
 .product-card__desc {
-  font-size: 18px;
   line-height: 1.88;
   max-width: 624px;
   margin-bottom: 20px;
@@ -370,7 +380,6 @@ body {
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  font-size: 18px;
 }
 
 .buy {
@@ -408,7 +417,14 @@ body {
   padding-bottom: 70px;
   padding-bottom: 70px;
 }
-.buy_platform {
+.buy__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.buy___list_platform {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -429,7 +445,7 @@ body {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.footer_link {
+.footer__list_link {
   color: #000;
   font-size: 18px;
 }
