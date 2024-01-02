@@ -81,7 +81,7 @@ body {
     padding: 70px 0 140px;
     position: relative;
 
-    ::after {
+    &::after {
         content: "";
         display: block;
         background-image: url("./../img/gradient-transition.png");
@@ -115,7 +115,7 @@ body {
 }
 
 // OFFER
-
+/*
 .offer {
     background: #000;
     color: #fff;
@@ -242,6 +242,124 @@ body {
         }
     }
 }
+*/
+.action {
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    &__img {
+        width: 8.86%;
+    }
+    &__title {
+        font-family: "Archangelsk";
+        font-size: 62px;
+        position: relative;
+        margin-bottom: 39px;
+        width: 91.14%;
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 1.88;
+        width: 100%;
+        &_max-width {
+            width: 952px;
+        }
+    }
+    &__consoles-img {
+        width: 65%;
+        display: flex;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: fit-content;
+    margin-top: 125px;
+    width: 35%;
+    &__label {
+        display: block;
+        position: relative;
+        padding-bottom: 13px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 35px;
+    }
+    &__input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #777777;
+    }
+    &__wrapper-file {
+        margin-bottom: 32px;
+    }
+
+    .button {
+        margin-bottom: 15px;
+    }
+}
+
+.file {
+    width: 100%;
+    height: 120px;
+    border: 1px dashed #777;
+    &__input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__label {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration: underline;
+        span {
+            text-decoration: none;
+        }
+    }
+}
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    &__label {
+        padding-left: 25px;
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border: 1px solid #777777;
+            position: absolute;
+            left: 0;
+        }
+    }
+    &__input {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+    }
+    &__input:checked ~ label::before {
+        background-image: url("./../img/offer/checked.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
 
 // PRODUCT
 
@@ -265,6 +383,7 @@ body {
         padding: 140px 0 70px 0;
     }
 }
+
 .product-content {
     &__img {
         display: flex;
