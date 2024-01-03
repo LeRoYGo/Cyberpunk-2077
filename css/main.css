@@ -341,10 +341,7 @@ body {
 .action__desc {
   font-size: 18px;
   line-height: 1.88;
-  width: 100%;
-}
-.action__desc_max-width {
-  width: 952px;
+  width: 80%;
 }
 .action__consoles-img {
   width: 65%;
