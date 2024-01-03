@@ -3,9 +3,9 @@
 @font-face {
   font-family: "Archangelsk";
   src: url("./../fonts/Archangelsk/Archangelsk.eot");
-  src: local("Archangelsk"),
-    url("./../fonts/Archangelsk/Archangelsk.eot?#iefix")
-      format("embedded-opentype"),
+  src:
+    local("Archangelsk"),
+    url("./../fonts/Archangelsk/Archangelsk.eot?#iefix") format("embedded-opentype"),
     url("./../fonts/Archangelsk/Archangelsk.woff") format("woff"),
     url("./../fonts/Archangelsk/Archangelsk.ttf") format("truetype");
   font-weight: normal;
@@ -248,16 +248,18 @@ body {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 0;
+  column-gap: 32px;
+  row-gap: 25px;
+  padding: 15px 0px 50px;
   &__img {
-    width: 8.86%;
+    width: 11%;
   }
   &__title {
     font-family: "Archangelsk";
     font-size: 62px;
     position: relative;
-    margin-bottom: 39px;
-    width: 91.14%;
+    align-self: end;
+    width: 70%;
   }
   &__desc {
     font-size: 18px;
@@ -265,7 +267,7 @@ body {
     width: 80%;
   }
   &__consoles-img {
-    width: 65%;
+    width: 63%;
     display: flex;
   }
   &__consoles-img-wrapper {
@@ -275,6 +277,9 @@ body {
       height: 100%;
       object-fit: contain;
     }
+    &_position {
+      margin-top: -100px;
+    }
   }
 }
 
@@ -283,9 +288,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: fit-content;
   margin-top: 125px;
-  width: 35%;
+  width: 34%;
   &__label {
     display: block;
     position: relative;

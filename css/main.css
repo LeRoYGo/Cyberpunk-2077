@@ -326,17 +326,20 @@ body {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 0;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 25px;
+  padding: 15px 0px 50px;
 }
 .action__img {
-  width: 8.86%;
+  width: 11%;
 }
 .action__title {
   font-family: "Archangelsk";
   font-size: 62px;
   position: relative;
-  margin-bottom: 39px;
-  width: 91.14%;
+  align-self: end;
+  width: 70%;
 }
 .action__desc {
   font-size: 18px;
@@ -344,7 +347,7 @@ body {
   width: 80%;
 }
 .action__consoles-img {
-  width: 65%;
+  width: 63%;
   display: flex;
 }
 .action__consoles-img-wrapper {
@@ -356,16 +359,17 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.action__consoles-img-wrapper_position {
+  margin-top: -100px;
+}
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 125px;
-  width: 35%;
+  width: 34%;
 }
 .form__label {
   display: block;
