@@ -1,0 +1,207 @@
+.product,
+.buy,
+.footer {
+    display: none;
+}
+// HEADER
+
+@media (max-width: 749px) {
+    .nav {
+        row-gap: 10px;
+        justify-content: center;
+    }
+    @media (max-width: 682px) {
+        .header {
+            .container {
+                padding: 0;
+            }
+            &__content {
+                width: 100%;
+                padding: 50px 15px;
+                margin-bottom: -45px;
+            }
+            @media (max-width: 514px) {
+                &__content {
+                    padding: 30px 15px;
+                    font-size: 30px;
+                    align-items: center;
+                    text-align: center;
+                }
+                @media (max-width: 432px) {
+                    .nav {
+                        &__list {
+                            column-gap: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav {
+            margin-bottom: 450px;
+        }
+    }
+}
+
+// ABOUT PLAY
+
+@media (max-width: 1340px) {
+    .about-play {
+        &__list {
+            flex-direction: column;
+            row-gap: 15px;
+        }
+        &__column1 {
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 15px;
+            row-gap: 15px;
+            img {
+                width: 50%;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .about-play {
+            &__title {
+                max-width: 620px;
+            }
+            &__desc {
+                max-width: 788px;
+            }
+        }
+        @media (max-width: 770px) {
+            .about-play {
+                .container {
+                    padding: 0;
+                }
+                &__title,
+                &__desc {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                &__list {
+                    flex-direction: column;
+                }
+                &__column1 {
+                    flex-wrap: wrap;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            @media (max-width: 682px) {
+                .about-play {
+                    padding-top: 140px;
+                }
+                @media (max-width: 609px) {
+                    .about-play {
+                        &__title {
+                            font-size: 30px;
+                        }
+                        &__desc {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ACTION
+
+@media (max-width: 1126px) {
+    .form {
+        width: 40%;
+    }
+    @media (max-width: 1024px) {
+        .action {
+            column-gap: 15px;
+            row-gap: 15px;
+            &__text-wrapper {
+                width: 50%;
+                order: -2;
+            }
+            &__title,
+            &__desc {
+                max-width: 460px;
+                width: 100%;
+            }
+            &__consoles-img {
+                &_position {
+                    order: -1;
+                    flex: 48%;
+                }
+            }
+        }
+        .form {
+            width: 50%;
+            margin-top: 80px;
+        }
+        @media (max-width: 809px) {
+            .action {
+                column-gap: 0;
+                row-gap: 0;
+                position: relative;
+                &__img {
+                    display: none;
+                    &_double {
+                        display: block;
+                        position: absolute;
+                        max-width: 18vw;
+                    }
+                }
+                &__consoles-img {
+                    order: -3;
+                    flex: 45%;
+                    margin-top: 70px;
+                }
+                &__text-wrapper {
+                    width: 100%;
+                }
+                &__title,
+                &__desc {
+                    max-width: 100%;
+                }
+            }
+            .form {
+                width: 100%;
+            }
+            @media (max-width: 770px) {
+                .action {
+                    .container {
+                        padding: 0;
+                    }
+                    &__title,
+                    &__desc {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+                @media (max-width: 514px) {
+                    .action {
+                        &__title {
+                            font-size: 30px;
+                        }
+                        &__desc {
+                            font-size: 16px;
+                        }
+                    }
+                    .form {
+                        &__label {
+                            font-size: 16px;
+                        }
+                    }
+                    .file {
+                        &__label {
+                            font-size: 16px;
+                        }
+                    }
+                    .button_yellow {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

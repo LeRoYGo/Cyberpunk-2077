@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link type="image/x-icon" rel="shortcut icon" href="./img/favicon.ico" />
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/media.css" />
         <title>Cyberpunk 2077</title>
     </head>
     <body>
@@ -59,14 +60,19 @@
         <section class="action">
             <div class="container">
                 <div class="action">
-                    <div class="action__img">
+                    <div class="action__img_double">
                         <img src="./img/offer/stock.svg" alt="" />
                     </div>
-                    <h2 class="action__title">Играй и выигрывай!</h2>
-                    <p class="action__desc">
-                        Играй в <span class="blue-text">Cyberpunk 2077</span> и получи возможность выиграть консоль <span class="blue-text">Xbox Series X</span> или
-                        <span class="blue-text">Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
-                    </p>
+                    <div class="action__text-wrapper">
+                        <div class="action__img">
+                            <img src="./img/offer/stock.svg" alt="" />
+                        </div>
+                        <h2 class="action__title">Играй и выигрывай!</h2>
+                        <p class="action__desc">
+                            Играй в <span class="blue-text">Cyberpunk 2077</span> и получи возможность выиграть консоль <span class="blue-text">Xbox Series X</span> или
+                            <span class="blue-text">Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
+                        </p>
+                    </div>
                     <form class="form" action="#" method="post">
                         <label class="form__label"><input class="form__input" type="text" name="user-name" />Как тебя зовут?</label>
                         <label class="form__label"><input class="form__input" type="email" name="user-email" />Твой е-mail</label>
@@ -80,13 +86,11 @@
                             <label for="custom-checkbox" class="custom-checkbox__label">Согласен на обработку персональных данных</label>
                         </div>
                     </form>
+                    <div class="action__consoles-img action__consoles-img_position">
+                        <img src="./img/offer/XBOX.png" alt="Xbox Series X" />
+                    </div>
                     <div class="action__consoles-img">
-                        <div class="action__consoles-img-wrapper">
-                            <img src="./img/offer/XBOX.png" alt="Xbox Series X" />
-                        </div>
-                        <div class="action__consoles-img-wrapper action__consoles-img-wrapper_position">
-                            <img src="./img/offer/PS5.png" alt="Sony PlayStation 5" />
-                        </div>
+                        <img src="./img/offer/PS5.png" alt="Sony PlayStation 5" />
                     </div>
                 </div>
             </div>
