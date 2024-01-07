@@ -320,16 +320,14 @@ body {
   background: #000;
   color: #fff;
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
   &__img {
-    flex: 0 1 50%;
+    flex: 1 1 50%;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
   &__content {
-    flex: 0 1 50%;
-    padding: 70px 32px 0;
+    flex: 1 1 50%;
+    padding: 70px 32px;
   }
   &__title {
     font-family: "Archangelsk";
@@ -347,8 +345,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    padding-bottom: 70px;
-    padding-bottom: 70px;
+    margin-bottom: 40px;
   }
   &__item {
     display: flex;
@@ -356,7 +353,7 @@ body {
     align-items: center;
     column-gap: 10px;
   }
-  &___list_platform {
+  &___list-platform {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -371,17 +368,21 @@ body {
 .footer {
   &__nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 13px 0;
   }
   &__list {
+    flex: 1 1 50%;
     display: flex;
+    justify-content: flex-end;
     column-gap: 32px;
-  }
-  &__list_link {
-    color: #000;
     font-size: 18px;
+    a {
+      color: #000;
+    }
+    &:first-child {
+      justify-content: space-between;
+    }
   }
   &__copyright {
     background-color: #000;

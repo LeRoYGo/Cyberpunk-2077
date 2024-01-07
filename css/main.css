@@ -397,17 +397,15 @@ body {
   background: #000;
   color: #fff;
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
 }
 .buy__img {
-  flex: 0 1 50%;
+  flex: 1 1 50%;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 .buy__content {
-  flex: 0 1 50%;
-  padding: 70px 32px 0;
+  flex: 1 1 50%;
+  padding: 70px 32px;
 }
 .buy__title {
   font-family: "Archangelsk";
@@ -425,8 +423,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  padding-bottom: 70px;
-  padding-bottom: 70px;
+  margin-bottom: 40px;
 }
 .buy__item {
   display: flex;
@@ -435,7 +432,7 @@ body {
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-.buy___list_platform {
+.buy___list-platform {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -447,18 +444,22 @@ body {
 
 .footer__nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 13px 0;
 }
 .footer__list {
+  flex: 1 1 50%;
   display: flex;
+  justify-content: flex-end;
   -moz-column-gap: 32px;
        column-gap: 32px;
-}
-.footer__list_link {
-  color: #000;
   font-size: 18px;
+}
+.footer__list a {
+  color: #000;
+}
+.footer__list:first-child {
+  justify-content: space-between;
 }
 .footer__copyright {
   background-color: #000;
