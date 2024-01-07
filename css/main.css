@@ -133,6 +133,8 @@ body {
 .header .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 .header__content {
   display: inline-flex;
@@ -157,7 +159,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  margin-bottom: 550px;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
@@ -360,6 +361,7 @@ body {
 .product-content__partners {
   display: flex;
   align-items: center;
+  justify-content: center;
   -moz-column-gap: 25px;
        column-gap: 25px;
 }
