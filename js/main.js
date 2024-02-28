@@ -1,11 +1,16 @@
-const listSrc = [`url("./../img/header/1.jpg")`, `url("./../img/header/2.jpg")`, `url("./../img/header/3.jpg")`];
-let header = document.querySelector("#header");
-let i = 0;
+const bg = [`url("/img/header/1.jpg")`, `url("/img/header/2.jpg")`, `url("/img/header/3.jpg")`];
+const header = document.getElementById("header");
+let i = 1;
 
-document.querySelector("#headerButton").onclick = function () {
-    if (header.style.backgroundImage === listSrc[2]) {
-        header.style.backgroundImage === listSrc[0];
+function SetImage() {
+    header.style.backgroundImage = bg[i];
+
+    if (i == bg.length) {
         i = 0;
+        header.style.backgroundImage = bg[i];
     }
-    header.style.backgroundImage === listSrc[--i];
-};
+
+    i++;
+}
+
+setInterval(SetImage, 2000);
