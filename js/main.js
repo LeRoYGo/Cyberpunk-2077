@@ -1,4 +1,4 @@
-const bg = [`url("img/header/1.jpg")`, `url("img/header/1.jpg")`, `url("img/header/1.jpg")`];
+const bg = [`url("./../img/header/1.jpg")`, `url("./../img/header/2.jpg")`, `url("./../img/header/3.jpg")`];
 const header = document.getElementById("header");
 let i = 1;
 
